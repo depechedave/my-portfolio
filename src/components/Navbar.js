@@ -4,9 +4,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
-  { name: "Projects", href: "/projects", current: false },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Projects", href: "/projects" },
 ]
 
 function classNames(...classes) {
@@ -48,14 +48,12 @@ export default function Navbar() {
                   <div className="flex space-x-4">
                     {navigation.map(item => (
                       <Link
+                        to={item.href}
                         key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-3 py-2 rounded-md text-sm font-medium"
-                        )}
+                        className={
+                          "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                        }
+                        activeClassName={"bg-gray-900 text-white"}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
