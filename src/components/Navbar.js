@@ -1,17 +1,13 @@
-import { Disclosure } from "@headlessui/react"
-import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import React from "react"
 import { Link } from "gatsby"
+import { Disclosure } from "@headlessui/react"
+import { MenuIcon, XIcon } from "@heroicons/react/outline"
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
 ]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ")
-}
 
 export default function Navbar() {
   return (
@@ -54,7 +50,7 @@ export default function Navbar() {
                           "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                         }
                         activeClassName={"bg-gray-900 text-white"}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={item.href ? "page" : undefined}
                       >
                         {item.name}
                       </Link>
@@ -72,13 +68,10 @@ export default function Navbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
+                  className={
+                    "block px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  }
+                  aria-current={item.href ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
