@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl sm:text-7xl text-indigo-200 mb-5;
+  }
+  h2 {
+    @apply text-xl sm:text-3xl text-pink-300;
+  }
+  h3 {
+    @apply text-lg sm:text-xl text-lime-200;
+  }
+  p {
+    @apply text-lg text-indigo-100 sm:text-xl;
+  }
+  html {
+    @apply bg-gray-800;
+  }
+  button {
+    @apply py-2 px-6 rounded mt-4 text-white text-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-400 hover:to-pink-400;
+  }
+  section {
+    @apply flex flex-col min-h-min py-20 px-44;
+  }
+}

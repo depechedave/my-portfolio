@@ -3,10 +3,9 @@ import Navbar from "./Navbar"
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <>
       <Navbar />
-      <div></div>
-      {children}
-    </div>
+      <div class="flex flex-col items-center text-center mt-20">{children}</div>
+    </>
   )
 }

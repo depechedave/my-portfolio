@@ -1,12 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-const About = () => {
+const Cv = () => {
   return (
     <>
-      <h1>About</h1>
+      <h1>CV</h1>
       <section>
         <h1>Heading</h1>
+        <h2>Sub heading</h2>
+        <h3>Sub sub heading</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           dneque maxime quasi nostrum officiis blanditiis, culpa architecto
@@ -15,6 +17,8 @@ const About = () => {
       </section>
       <section>
         <h1>Heading</h1>
+        <h2>Sub heading</h2>
+        <h3>Sub sub heading</h3>
         <p>
           Qui ipsum, sunt ipsam v oluptate labore, aliquid maxime ratione
           dolores odio culpa consequatur error quis! Nemo et odit, porro ratione
@@ -24,6 +28,8 @@ const About = () => {
       </section>
       <section>
         <h1>Heading</h1>
+        <h2>Sub heading</h2>
+        <h3>Sub sub heading</h3>
         <p>
           Numquam fuga non ratione aliquam quidem eos aut ad, mollitia dolores,
           expedita asperiores? Iure incidunt enim eos voluptate cumque, iste
@@ -32,6 +38,8 @@ const About = () => {
       </section>
       <section>
         <h1>Heading</h1>
+        <h2>Sub heading</h2>
+        <h3>Sub sub heading</h3>
         <p>
           Veritatis ullam, consequuntur debitis eveniet iusto modi corporis
           omnis veniam itaque dolore repellendus vel. Eveniet voluptate modi
@@ -41,6 +49,8 @@ const About = () => {
       </section>
       <section>
         <h1>Heading</h1>
+        <h2>Sub heading</h2>
+        <h3>Sub sub heading</h3>
         <p>
           Labore eius cumque sequi fuga fugiat harum nisi atque aspernatur
           voluptatibus pariatur iusto officiis ad rerum dolorum ratione
@@ -52,5 +62,5 @@ const About = () => {
   )
 }
 
-About.Layout = Layout
-export default About
+Cv.Layout = Layout
+export default Cv

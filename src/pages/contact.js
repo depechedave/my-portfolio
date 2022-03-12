@@ -1,30 +1,29 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-export default function About() {
+const Contact = () => {
   return (
-    <Layout>
-      <div>
-        <h1 class="text-red-700 text-6xl">Contact Us Page</h1>
+    <>
+      <h1>Contact</h1>
+      <section>
+        <h1>Heading</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          cumque non ipsam sapiente natus a vitae veritatis vel ad et dolores
-          optio accusamus eaque, culpa dolorum error recusandae inventore
-          suscipit?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          dneque maxime quasi nostrum officiis blanditiis, culpa architecto
+          beatae eius adipisci molestias est sint libero vero aperiam iure.
         </p>
+      </section>
+      <section>
+        <h1>Heading</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officiis
-          ipsam reiciendis quis, praesentium odio, aliquam veniam repellendus
-          delectus dolores et minus, corporis qui quas. Dolor explicabo
-          similique nobis fugit.
+          Qui ipsum, sunt ipsam v oluptate labore, aliquid maxime ratione
+          dolores odio culpa consequatur error quis! Nemo et odit, porro ratione
+          rerum ducimus veritatis. Cumque, nemo. Necessitatibus saepe laudantium
+          quis odio.
         </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          deserunt illo autem sint neque soluta ex ullam accusantium quia
-          blanditiis molestias aperiam ad exercitationem quibusdam doloremque
-          consequuntur tenetur, consequatur corporis?
-        </p>
-      </div>
-    </Layout>
+      </section>
+    </>
   )
 }
+Contact.Layout = Layout
+export default Contact

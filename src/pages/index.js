@@ -1,14 +1,18 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-export default function Home() {
+const Home = () => {
   return (
-    <Layout>
-      <section>
-        <h1 class="text-green-700 text-4xl">David Allerton</h1>
-        <h3 class="text-white">Web Developer</h3>
-        <p class="text-white">Front End Development & UI/UX</p>
-      </section>
-    </Layout>
+    <>
+      <h1>David Allerton</h1>
+      <h2>Web Developer</h2>
+      <h3>Front End Development & UI/UX</h3>
+      <a href="mailto:admin@davidallerton.com">
+        <button>Contact me</button>
+      </a>
+    </>
   )
 }
+
+Home.Layout = Layout
+export default Home
