@@ -7,8 +7,28 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          quality: 100,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/logo-512.svg`,
+      },
+    },
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-remark",
     {
@@ -21,7 +41,9 @@ module.exports = {
     "gatsby-plugin-postcss",
   ],
   siteMetadata: {
-    title: "David Allerton",
-    description: "Personal Porfolio",
+    title: "davidallerton.com",
+    description: "David Allerton Personal Porfolio Projects",
+    author: "David Allerton",
+    siteURL: "https://davidallerton.com",
   },
 }

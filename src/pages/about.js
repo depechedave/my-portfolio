@@ -6,7 +6,7 @@ const About = () => {
     <>
       <h1>About</h1>
       <section>
-        <h1>Heading</h1>
+        <h2>Heading</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           dneque maxime quasi nostrum officiis blanditiis, culpa architecto
@@ -14,7 +14,7 @@ const About = () => {
         </p>
       </section>
       <section>
-        <h1>Heading</h1>
+        <h2>Heading</h2>
         <p>
           Qui ipsum, sunt ipsam v oluptate labore, aliquid maxime ratione
           dolores odio culpa consequatur error quis! Nemo et odit, porro ratione
@@ -23,7 +23,7 @@ const About = () => {
         </p>
       </section>
       <section>
-        <h1>Heading</h1>
+        <h2>Heading</h2>
         <p>
           Numquam fuga non ratione aliquam quidem eos aut ad, mollitia dolores,
           expedita asperiores? Iure incidunt enim eos voluptate cumque, iste
@@ -31,7 +31,7 @@ const About = () => {
         </p>
       </section>
       <section>
-        <h1>Heading</h1>
+        <h2>Heading</h2>
         <p>
           Veritatis ullam, consequuntur debitis eveniet iusto modi corporis
           omnis veniam itaque dolore repellendus vel. Eveniet voluptate modi
@@ -40,7 +40,7 @@ const About = () => {
         </p>
       </section>
       <section>
-        <h1>Heading</h1>
+        <h2>Heading</h2>
         <p>
           Labore eius cumque sequi fuga fugiat harum nisi atque aspernatur
           voluptatibus pariatur iusto officiis ad rerum dolorum ratione

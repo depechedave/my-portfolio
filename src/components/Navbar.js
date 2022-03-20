@@ -6,8 +6,8 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline"
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "CV", href: "/cv" },
   { name: "Projects", href: "/projects" },
+  { name: "CV", href: "/cv" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -31,19 +31,25 @@ export default function Navbar() {
                     <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
+                {/* End Mobile menu button*/}
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-10 w-auto"
-                    src="/DPA.svg"
-                    alt="DPA"
-                  />
-                  <img
-                    className="hidden lg:block h-10 w-auto"
-                    src="/DPA.svg"
-                    alt="DPA"
-                  />
+                  <Disclosure.Button as={Link} href="/">
+                    <img
+                      className="block h-10 w-auto"
+                      src="/DPA.svg"
+                      alt="DPA"
+                    />
+                  </Disclosure.Button>
+
+                  {/* <Link to="/">
+                    <img
+                      className="block h-10 w-auto"
+                      src="/DPA.svg"
+                      alt="DPA"
+                    />
+                  </Link> */}
                 </div>
               </div>
               <div className="hidden sm:block absolute inset-y-0 right-0 items-center space-x-4 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

@@ -24,8 +24,8 @@ const ProjectsHome = ({ data }) => {
                     />
                   </div>
                   <div className="mt-2">
-                    <h2>{project.frontmatter.title}</h2>
-                    <h3>{project.frontmatter.stack}</h3>
+                    <h3>{project.frontmatter.title}</h3>
+                    <p>{project.frontmatter.stack}</p>
                   </div>
                 </div>
               </Link>

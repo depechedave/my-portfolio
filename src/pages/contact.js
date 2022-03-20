@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <h1>Contact</h1>
       <section>
-        <h1>Heading</h1>
+        <h2>Heading</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           dneque maxime quasi nostrum officiis blanditiis, culpa architecto
@@ -14,7 +14,7 @@ const Contact = () => {
         </p>
       </section>
       <section>
-        <h1>Heading</h1>
+        <h2>Heading</h2>
         <p>
           Qui ipsum, sunt ipsam v oluptate labore, aliquid maxime ratione
           dolores odio culpa consequatur error quis! Nemo et odit, porro ratione
