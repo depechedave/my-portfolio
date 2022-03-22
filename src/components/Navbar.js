@@ -34,7 +34,7 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center">
-                  <Disclosure.Button as={Link} href="/">
+                  <Disclosure.Button as={Link} to="/">
                     <img
                       className="block h-10 w-auto"
                       src="/DPA.svg"
