@@ -36,28 +36,6 @@ const Cv = () => {
           sed! Autem, illo aut eius ut dolore labore consequuntur tempora.
         </p>
       </section>
-      <section>
-        <h1>Heading</h1>
-        <h2>Sub heading</h2>
-        <h3>Sub sub heading</h3>
-        <p>
-          Veritatis ullam, consequuntur debitis eveniet iusto modi corporis
-          omnis veniam itaque dolore repellendus vel. Eveniet voluptate modi
-          dolor, quis repellat ut, perspiciatis nisi, corporis neque enim
-          repudiandae quibusdam minima exercitationem?
-        </p>
-      </section>
-      <section>
-        <h1>Heading</h1>
-        <h2>Sub heading</h2>
-        <h3>Sub sub heading</h3>
-        <p>
-          Labore eius cumque sequi fuga fugiat harum nisi atque aspernatur
-          voluptatibus pariatur iusto officiis ad rerum dolorum ratione
-          explicabo ex, voluptate odit voluptatem, rem nemo quo deserunt. Eos,
-          magnam adipisci!
-        </p>
-      </section>
     </>
   )
 }

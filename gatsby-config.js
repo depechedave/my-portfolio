@@ -1,20 +1,11 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
   /* Your site config here */
   plugins: [
-    {
-      resolve: "gatsby-plugin-sharp",
-      options: {
-        defaults: {
-          quality: 100,
-        },
-      },
-    },
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -28,9 +19,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-image",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,7 +26,13 @@ module.exports = {
         path: `${__dirname}/src/projects/`,
       },
     },
-    "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "davidallerton.com",

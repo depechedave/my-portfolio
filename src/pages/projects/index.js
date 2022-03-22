@@ -1,6 +1,7 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const ProjectsHome = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes
@@ -12,14 +13,18 @@ const ProjectsHome = ({ data }) => {
           <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {projects.map(project => (
               <Link
-                // to={"/projects/" + project.frontmatter.url}
+                to={"/projects/" + project.frontmatter.slug}
                 key={project.id}
               >
                 <div>
-                  <div className="w-full aspect-w-1 aspect-h-1 bg-stone-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                    <img
-                      src={project.frontmatter.imgSrc}
+                  <div className="w-60 h-64 rounded-md overflow-hidden hover:opacity-90">
+                    <GatsbyImage
+                      image={
+                        project.frontmatter.thumb.childImageSharp
+                          .gatsbyImageData
+                      }
                       alt={project.frontmatter.title}
+                      className="w-60 h-64 object-fill"
                     />
                   </div>
                   <div className="mt-2">
@@ -49,8 +54,11 @@ export const query = graphql`
           title
           slug
           stack
-          imgSrc
-          url
+          thumb {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
         }
         id
       }
