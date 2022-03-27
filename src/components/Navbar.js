@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-800 border-b-2 border-gray-700 sticky w-full top-0 backdrop-filter backdrop-blur-lg bg-opacity-30"
+      className="bg-gray-800 border-b-2 border-gray-700 sticky w-full top-0 backdrop-filter backdrop-blur-lg bg-opacity-40"
     >
       {({ open }) => (
         <>
