@@ -27,7 +27,7 @@ export default function Layout({ children }) {
         </title>
       </Helmet>
       <Navbar />
-      <div class="grid grid-cols-1 items-center text-center mt-20">
+      <div className="grid grid-cols-1 items-center text-center mt-16">
         {children}
       </div>
     </>

@@ -6,7 +6,15 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark {
         nodes {
           frontmatter {
+            holding {
+              features {
+                desc
+                name
+              }
+            }
             slug
+            stack
+            title
           }
         }
       }
