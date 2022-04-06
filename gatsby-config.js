@@ -1,4 +1,5 @@
 module.exports = {
+  jsxRuntime: "automatic",
   /* Your site config here */
   plugins: [
     "gatsby-transformer-sharp",
